@@ -1,0 +1,38 @@
+//Login Simple User
+POST http://localhost:8080/auth
+Content-Type: application/json
+
+{
+    "email": "felipe@email.com",
+    "password": "123456"
+}
+
+//Login ADM User
+###
+POST http://localhost:8080/auth
+Content-Type: application/json
+
+{
+    "email":"felipeAdm@email.com",
+    "password":"adm123456",
+    "adm": true
+}
+//Create User
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "email": "felipe@email.com",
+    "password": "123456"
+}
+
+//Create ADM User
+###
+POST http://localhost:8080/adm_users
+Content-Type: application/json
+
+{
+    "email" : "felipeAdm@email.com",
+    "password": "adm123456"
+}
