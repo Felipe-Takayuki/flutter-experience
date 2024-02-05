@@ -1,4 +1,5 @@
 import 'package:asyncstate/asyncstate.dart';
+import 'package:fe_clinicas_core/src/theme/clinicas_theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
@@ -27,6 +28,8 @@ class ClinicasCoreConfig extends StatelessWidget {
         builder: (context, routes, flutterGetItNavObserver) {
           return AsyncStateBuilder(builder: (navigatorObserver) {
             return MaterialApp(
+              theme: ClinicasTheme.lightTheme,
+              darkTheme: ClinicasTheme.darkTheme,
               navigatorObservers: [flutterGetItNavObserver],
               routes: routes,
               title: title,
